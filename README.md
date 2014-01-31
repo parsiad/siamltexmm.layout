@@ -15,16 +15,15 @@ Installation
 
 This procedure goes over how to install the siamltexmm class and bst files for a single user.
 
-* Move the contents of the `layouts` and `templates` directories to `~/.lyx/layouts` and `~/.lyx/templates`, respectively.
-* Run
+Move the contents of the `layouts` and `templates` directories to `~/.lyx/layouts` and `~/.lyx/templates`, respectively. To install siamltexmm from the SIAM website, run
 
-    mkdir -p ~/texmf/tex/latex/base
-    mkdir -p ~/texmf/tex/latex/bibtex/bst/base
-    wget http://www.siam.org/journals/tex/siamltexmm.zip
-    unzip siamltexmm.zip
-    mv SIAM11.clo ~/texmf/tex/latex/base/siam11.clo
-    mv siamltexmm.cls subeqn.clo ~/texmf/tex/latex/base
-    mv siam.bst ~/texmf/tex/latex/bibtex/bst/base
+	mkdir -p ~/texmf/tex/latex/base
+	mkdir -p ~/texmf/tex/latex/bibtex/bst/base
+	wget http://www.siam.org/journals/tex/siamltexmm.zip
+	unzip siamltexmm.zip
+	mv SIAM11.clo ~/texmf/tex/latex/base/siam11.clo
+	mv siamltexmm.cls subeqn.clo ~/texmf/tex/latex/base
+	mv siam.bst ~/texmf/tex/latex/bibtex/bst/base
 
 Usage
 =====
