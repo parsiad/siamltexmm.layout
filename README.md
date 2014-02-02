@@ -13,9 +13,7 @@ Use this layout if you plan on submitting to one of the following journals:
 Installation
 ============
 
-This procedure goes over how to install the siamltexmm class and bst files for a single user.
-
-Move the contents of the `layouts` and `templates` directories to `~/.lyx/layouts` and `~/.lyx/templates`, respectively. To install siamltexmm from the SIAM website, run
+To install siamltexmm from the SIAM website, run
 
 	mkdir -p ~/texmf/tex/latex/base
 	mkdir -p ~/texmf/tex/latex/bibtex/bst/base
@@ -24,6 +22,14 @@ Move the contents of the `layouts` and `templates` directories to `~/.lyx/layout
 	mv SIAM11.clo ~/texmf/tex/latex/base/siam11.clo
 	mv siamltexmm.cls subeqn.clo ~/texmf/tex/latex/base
 	mv siam.bst ~/texmf/tex/latex/bibtex/bst/base
+
+To install the LyX layout files from the siamltexmm.layout repository, run
+
+	git clone https://github.com/parsiad/siamltexmm.layout.git
+	ln -s siamltexmm.layout/layouts/siamltexmm.layout ~/.lyx/layouts/siamltexmm.layout
+	ln -s siamltexmm.layout/templates/siamltexmm.lyx ~/.lyx/templates/siamltexmm.lyx
+
+Alternatively, you can download a snapshot of the repository and move the files to the appropriate places.
 
 Usage
 =====
