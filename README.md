@@ -26,8 +26,10 @@ To install siamltexmm from the SIAM website, run
 To install the LyX layout files from the siamltexmm.layout repository, run
 
 	git clone https://github.com/parsiad/siamltexmm.layout.git
-	ln -s siamltexmm.layout/layouts/siamltexmm.layout ~/.lyx/layouts/siamltexmm.layout
-	ln -s siamltexmm.layout/templates/siamltexmm.lyx ~/.lyx/templates/siamltexmm.lyx
+	ln -s siamltexmm.layout/layouts/siamltexmm.layout $LYX/layouts/siamltexmm.layout
+	ln -s siamltexmm.layout/templates/siamltexmm.lyx $LYX/templates/siamltexmm.lyx
+
+where ```$LYX``` is the lyx configuration directory. Most configurations use ```~/.lyx```. OS X defaults to ```~/Library/Application Support/LyX-x.x/``` where ```x.x``` is the version number.
 
 Alternatively, you can download a snapshot of the repository and move the files to the appropriate places.
 
