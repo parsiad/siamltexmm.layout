@@ -31,14 +31,17 @@ To install the LyX layout files from the siamltexmm.layout repository, run
 
 Alternatively, you can download a snapshot of the repository and move the files to the appropriate places.
 
+Before you can use the template in LyX, you need to reconfigure LyX:
+
+* Open LyX
+* Go to Tools -> Reconfigure
+* Restart LyX
+
 Usage
 =====
 
 I strongly recommend the use of the template file. The template file has several pieces of code without which the document may fail to compile.
 
-* Open LyX
-* Go to Tools -> Reconfigure
-* Restart LyX
 * Go to File -> New from Template...
 * Browse to and open `~/.lyx/templates/siamltexmm.lyx`
 
